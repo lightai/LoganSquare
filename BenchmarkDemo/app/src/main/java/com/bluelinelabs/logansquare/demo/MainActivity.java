@@ -1,9 +1,9 @@
 package com.bluelinelabs.logansquare.demo;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 
@@ -26,8 +26,8 @@ import com.bluelinelabs.logansquare.demo.serializetasks.Serializer.SerializeList
 import com.bluelinelabs.logansquare.demo.widget.BarChart;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
-
 import com.squareup.moshi.Moshi;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -37,7 +37,7 @@ import java.util.List;
 /**
  * This is a test app we wrote in 10 minutes. Please do not write code like this, kiddos.
  */
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     private static final int ITERATIONS = 20;
 
